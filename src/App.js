@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Stack from './components/stack';
+import Card from './components/Card';
 
 function App() {
   return (

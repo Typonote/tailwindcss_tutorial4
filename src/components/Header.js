@@ -3,6 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-scroll'
 import Typical from 'react-typical'
 import dummy from '../data/dummy'
+import Card from './Card'
 
 const Header = () => {
 
@@ -13,12 +14,10 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='min-h-screen flex items-center justify-center bg-gray-800'>
+        <div className='min-h-screen flex items-center justify-center bg-gray-100'>
             <div className='flex flex-col md:flex-row-reverse items-center justify-between'>
-                <div className='w-full md:w-2/5'>
-                    <LazyLoadImage src={dummy.header.image} effect='blur'/>
-                </div>
-                <div className='text-white text-center md:text-left'>
+                <Card />
+                <div className='text-gray-900 text-center md:text-left'>
                     <h2 
                     className={`${
                         animated ? '' : 'translate-y-10 opacity-0'
