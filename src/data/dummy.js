@@ -1,3 +1,8 @@
+import android from '../assets/android_studio512.png'
+import react_logo from '../assets/logo512.png'
+import tailwind from '../assets/tailwind512.png'
+import scss from '../assets/scss512.png'
+
 const dummy = {
         nav: {
             logo: 'KJK',
@@ -25,23 +30,23 @@ const dummy = {
     
         stack: {
             title: 'Stack',
-            tech: [
+            tech: [  
                 {
-                img: process.env.PUBLIC_URL + '/assets/mongo.png',
-                alt: 'mongodb',
-                },
-                {
-                img: process.env.PUBLIC_URL + '/logo512.png',
+                img: react_logo,
                 alt: 'react',
                 },
                 {
-                img: process.env.PUBLIC_URL + '/assets/express.png',
-                alt: 'express',
+                img: tailwind,
+                alt: 'tailwind',
                 },
                 {
-                img: process.env.PUBLIC_URL + '/assets/node.png',
-                alt: 'node',
+                img: scss,
+                alt: 'scss',
                 },
+                {
+                    img: android,
+                    alt: 'android studio',
+                    },
             ],
             desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
         },
