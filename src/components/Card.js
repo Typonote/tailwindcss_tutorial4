@@ -2,14 +2,14 @@ import React from 'react'
 
 import profile from '../assets/kim_j_k.jpg'
 import { FaGithub } from "react-icons/fa";
-import { FaDribbble } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa";
+import { FaBloggerB } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 
 const Card = () => {
     return (
         <div className="w-full md:w-2/5">
-          <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-7 mb-6">
+          <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-8 mb-6">
             <div className="">
               <img
                 className="w-32 mx-auto shadow-xl rounded-full"
@@ -22,7 +22,7 @@ const Card = () => {
                 김진경
               </p>
               <p className="text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2">
-                I wanna be Forntend Developer
+                저는 프론트엔드 개발자를 꿈꿉니다.
               </p>
               <div className="flex align-center justify-center mt-4">
                 <a
@@ -34,17 +34,17 @@ const Card = () => {
                 </a>
                 <a
                   className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-pink-600 hover:bg-pink-600 rounded-full hover:text-white transition-colors duration-300"
-                  href='https://github.com/Typonote?tab=repositories'
+                  href='https://kdt-gitlab.elice.io/'
                 >
-                  <FaDribbble />
-                  <span class="sr-only">Dribble</span>
+                  <FaGitlab />
+                  <span class="sr-only">Gitlab</span>
                 </a>
                 <a
                   className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300"
-                  href='https://github.com/Typonote?tab=repositories'
+                  href='https://frontend-challenge.tistory.com/'
                 >
-                  <FaTwitter />
-                  <span class="sr-only">Twitter</span>
+                  <FaBloggerB />
+                  <span class="sr-only">Blog</span>
                 </a>
                 <a
                   className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-green-500 rounded-full hover:text-white transition-colors duration-300"

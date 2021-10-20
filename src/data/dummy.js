@@ -2,6 +2,8 @@ const dummy = {
         nav: {
             logo: 'KJK',
             links: [
+                { text: 'Home', to: 'home' },
+                { text: 'Stack', to: 'stack' },
                 { text: 'Work', to: 'mywork' },
                 { text: 'Contact', to: 'mycontact' },
             ],
@@ -9,16 +11,16 @@ const dummy = {
         header: {
             image:
             'https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80',
-            text: ['Hi!', "It's me Random.", 'I am '],
+            text: ['안녕하세요!', "저는 김진경입니다.", '저의 관심사는 '],
             typical: [
-                ' web developer. 🖥',
+                ' frontend developer. 🖥',
                 2000,
-                ' Youtuber. 📹',
+                ' Mobile Developer. 📱',
                 2000,
-                ' Mobile Developer',
+                ' Blogger. 👨‍💻 ',
                 2000,
             ],
-            btnText: 'Discover More',
+            btnText: '저를 소개합니다'
         },
     
         stack: {

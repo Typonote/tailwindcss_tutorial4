@@ -4,9 +4,9 @@ import dummy from '../data/dummy'
 
 const Stack = () => {
     return (
-        <div className='min-h-screen flex flex-col items-center justify-center' id='stack'>
+        <div className='min-h-screen flex flex-col items-center justify-center bg-gray-200' id='stack'>
         
-                <h1 className="text-5xl font-bold">Stack I use</h1>
+                <h1 className="text-5xl font-bold">Stack</h1>
             
                     <div className="flex flex-wrap justify-center mt-10">
                         {dummy.stack.tech.map((tech,index)=>{

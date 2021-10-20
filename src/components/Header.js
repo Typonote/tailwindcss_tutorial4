@@ -14,7 +14,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='min-h-screen flex items-center justify-center bg-gray-100'>
+        <div className='min-h-screen flex items-center justify-center bg-gray-100' id='home'>
             <div className='flex flex-col md:flex-row-reverse items-center justify-between'>
                 <Card />
                 <div className='text-gray-900 text-center md:text-left'>
@@ -23,19 +23,19 @@ const Header = () => {
                         animated ? '' : 'translate-y-10 opacity-0'
                     }  transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold`}
                     >
-                        Hi!<br/> I'm Jinkyung
+                        {dummy.header.text[0]}<br/> {dummy.header.text[1]}
                     </h2>
                     <h1 
                     className={`${
                     animated ? '' : 'translate-y-10 opacity-0'
-                    }  transform transition duration-1000 ease-in-out font-bold text-2xl text-gray-500`}>I am
+                    }  transform transition duration-1000 ease-in-out font-bold text-2xl text-gray-500`}>
                     <Typical 
                         steps={dummy.header.typical}
                         loop={Infinity}
                         className='inline-block'/>
                     </h1>
                     <Link to='stack'  smooth={true}>
-                        <button className='bg-indigo-500 px-10 py-3 uppercase mt-10 rounded-lg animate-bounce'>{dummy.header.btnText}</button>
+                        <button className='bg-indigo-500 px-10 py-3 uppercase mt-10  text-white text-1xl font-bold rounded-lg animate-bounce'>{dummy.header.btnText}</button>
                     </Link>
                 </div>
             </div> 
