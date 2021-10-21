@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Stack from './components/stack';
 import Dropdown from './components/Dropdown';
 import { useEffect, useState } from 'react';
+import Projects from './components/Projects';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       <Dropdown isOpen={isOpen}  toggle={toggle} />
       <Header />
       <Stack />
+      <Projects />
     </div>
   );
 }
