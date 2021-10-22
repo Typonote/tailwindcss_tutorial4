@@ -1,0 +1,19 @@
+.button-top{
+    position: fixed; 
+    width: 100%;
+    left: 48%;
+    margin-right: 3rem;
+    bottom: 40px;
+    height: 40px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        left: 45%;
+    }
+
+    @media screen and (max-width: 768px) {
+        left: 40%;
+    }
+}

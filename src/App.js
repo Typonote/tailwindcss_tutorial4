@@ -6,6 +6,7 @@ import Stack from './components/stack';
 import Dropdown from './components/Dropdown';
 import { useEffect, useState } from 'react';
 import Projects from './components/Projects';
+import Topbutton from './components/Topbutton';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Header />
       <Stack />
       <Projects />
+      <Topbutton />
     </div>
   );
 }
