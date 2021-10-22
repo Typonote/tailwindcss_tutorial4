@@ -7,6 +7,7 @@ import Dropdown from './components/Dropdown';
 import { useEffect, useState } from 'react';
 import Projects from './components/Projects';
 import Topbutton from './components/Topbutton';
+import Resume from './components/Resume';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Header />
       <Stack />
       <Projects />
+      <Resume />
       <Topbutton />
     </div>
   );

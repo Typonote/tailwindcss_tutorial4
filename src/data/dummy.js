@@ -9,8 +9,8 @@ const dummy = {
             links: [
                 { text: 'Home', to: 'home' },
                 { text: 'Stack', to: 'stack' },
-                { text: 'Work', to: 'mywork' },
-                { text: 'Contact', to: 'mycontact' },
+                { text: 'Project', to: 'projects' },
+                { text: 'Resume', to: 'resume' },
             ],
         },
         header: {
