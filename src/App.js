@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Projects from './components/Projects';
 import Topbutton from './components/Topbutton';
 import Resume from './components/Resume';
+import { ThemeProvider } from './components/themeContext';
 
 
 function App() {
@@ -33,15 +34,17 @@ function App() {
   })
 
   return (
-    <div className="App">
-      <Navigation toggle={toggle}/>
-      <Dropdown isOpen={isOpen}  toggle={toggle} />
-      <Header />
-      <Stack />
-      <Projects />
-      <Resume />
-      <Topbutton />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Navigation toggle={toggle}/>
+        <Dropdown isOpen={isOpen}  toggle={toggle} />
+        <Header />
+        <Stack />
+        <Projects />
+        <Resume />
+        <Topbutton />
+      </div>
+    </ThemeProvider>
   );
 }
 
