@@ -7,7 +7,7 @@ const Navigation = ({toggle}) => {
     
     return (
         <div>
-            <div className='flex items-center justify-between  py-3 bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white'>
+            <div className='flex items-center justify-between  py-3 bg-primary text-primary'>
 
                 <Toggle />
 
@@ -21,7 +21,7 @@ const Navigation = ({toggle}) => {
                     {dummy.nav.links.map((link , index)=>{
                         return (
                         <Link to={link.to}  smooth={true}>
-                        <span key={index} className='text-xl mr-4 cursor-pointer '>{link.text}</span>
+                        <span key={index} className='text-xl mr-4 cursor-pointer hover:text-accent'>{link.text}</span>
                         </Link>
                         );
                     })}

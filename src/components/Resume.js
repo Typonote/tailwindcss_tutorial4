@@ -4,9 +4,9 @@ import Myresume from '../assets/resume.txt'
 const Resume = () => {
     return (
 
-    <section className='min-h-screen flex flex-col items-center  justify-center bg-gray-200 dark:bg-gray-700' id='resume'>
+    <section className='min-h-screen flex flex-col items-center  justify-center bg-secondary dark:bg-secondary' id='resume'>
                 
-        <h1 className="text-5xl font-bold mt-7 mb-7 dark:text-white">Resume</h1>
+        <h1 className="text-5xl font-bold mt-7 mb-7 text-accent">Resume</h1>
 
         <button 
         type="button" 

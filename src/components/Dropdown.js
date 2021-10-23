@@ -3,11 +3,11 @@ import { Link } from 'react-scroll'
 
 const Dropdown = ({isOpen, toggle}) => {
     return (
-        <div className={isOpen ? 'grid grid-rows-4 text-center items-center bg-gray-100' : 'hidden'}  onClick={toggle}>
-                <Link className='p-4' to='home'>Home</Link>
-                <Link className='p-4' to='stack'>Stack</Link>
-                <Link className='p-4' to='work'>Work</Link>
-                <Link className='p-4' to='contact'>Contact</Link>
+        <div className={isOpen ? 'grid grid-rows-4 text-center items-center bg-primary' : 'hidden'}  onClick={toggle}>
+                <Link className='p-4 text-primary hover:text-accent' to='home'>Home</Link>
+                <Link className='p-4 text-primary hover:text-accent' to='stack'>Stack</Link>
+                <Link className='p-4 text-primary hover:text-accent' to='projects'>Projects</Link>
+                <Link className='p-4 text-primary hover:text-accent' to='resume'>Resume</Link>
         </div>
     )
 }

@@ -26,7 +26,7 @@ const Topbutton = () => {
     window.addEventListener('scroll', toggleVisible);
 
     return (
-        <div className='button-top text-indigo-500 '>
+        <div className='button-top text-indigo-500 dark:text-white'>
             <button>
                 <FaArrowCircleUp onClick={scrollToTop} 
                 style={{display: visible ? 'inline' : 'none'}} />

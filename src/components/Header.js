@@ -14,10 +14,10 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800' id='home'>
+        <div className='min-h-screen flex items-center justify-center bg-primary dark:bg-primary' id='home'>
             <div className='flex flex-col md:flex-row-reverse items-center justify-between'>
                 <Card />
-                <div className='text-gray-900 dark:text-white text-center md:text-left'>
+                <div className='text-primary text-center md:text-left'>
                     <h2 
                     className={`${
                         animated ? '' : 'translate-y-10 opacity-0'
@@ -28,7 +28,7 @@ const Header = () => {
                     <h1 
                     className={`${
                     animated ? '' : 'translate-y-10 opacity-0'
-                    }  transform transition duration-1000 ease-in-out font-bold text-2xl text-gray-500 dark:text-gray-400`}>
+                    }  transform transition duration-1000 ease-in-out font-bold text-2xl text-secondary`}>
                     <Typical 
                         steps={dummy.header.typical}
                         loop={Infinity}
