@@ -2,6 +2,8 @@ import android from '../assets/android_studio512.png'
 import react_logo from '../assets/logo512.png'
 import tailwind from '../assets/tailwind512.png'
 import scss from '../assets/scss512.png'
+import kaggle from '../assets/kaggle.png'
+
 
 const dummy = {
         nav: {
@@ -40,13 +42,13 @@ const dummy = {
                 alt: 'tailwind',
                 },
                 {
-                img: scss,
-                alt: 'scss',
+                img: kaggle,
+                alt: 'kaggle',
                 },
                 {
-                    img: android,
-                    alt: 'android studio',
-                    },
+                img: android,
+                alt: 'android studio',
+                },
             ],
             desc: `저는 react에 관심이 많습니다.`,
         },

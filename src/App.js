@@ -36,7 +36,7 @@ function App() {
   return (
     <ThemeProvider>
       <div className="App">
-        <Navigation toggle={toggle}/>
+        <Navigation toggle={toggle} />
         <Dropdown isOpen={isOpen}  toggle={toggle} />
         <Header />
         <Stack />

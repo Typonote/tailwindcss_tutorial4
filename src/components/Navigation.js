@@ -6,8 +6,8 @@ import Toggle from './Toggle';
 const Navigation = ({toggle}) => {
     
     return (
-        <div>
-            <div className='flex items-center justify-between  py-3 bg-primary text-primary'>
+        <div >
+            <div className='flex items-center justify-between  py-3  bg-primary bg-opacity-80 text-primary'>
 
                 <Toggle />
 

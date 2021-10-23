@@ -14,6 +14,8 @@ const Header = () => {
     }, []);
 
     return (
+
+        
         <div className='min-h-screen flex items-center justify-center bg-primary dark:bg-primary' id='home'>
             <div className='flex flex-col md:flex-row-reverse items-center justify-between'>
                 <Card />
