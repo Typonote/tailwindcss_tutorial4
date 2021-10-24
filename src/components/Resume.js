@@ -25,7 +25,7 @@ const Resume = () => {
             <a href={Myresume} download className="ml-2 font-bold">download</a>
         </button>
 
-        <p class="leading-relaxed text-base text-primary mx-3 text-md sm:text-xl ">저의 능력과 함께 앞으로 하고자 하는 것들에 대한 내용을 담았습니다.</p>
+        <p class="leading-relaxed text-base text-primary mx-4 text-md sm:text-xl ">저의 능력과 함께 앞으로 하고자 하는 것들에 대한 내용을 담았습니다.</p>
     </section>
     )
 }
