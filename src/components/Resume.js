@@ -1,6 +1,6 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import Myresume from '../assets/resume.txt'
+import Myresume from '../assets/resume_kim_jinkyung.docx'
 import Myword from '../assets/microsoft_word.png'
 
 const Resume = () => {
