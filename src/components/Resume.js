@@ -1,13 +1,32 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Myresume from '../assets/resume_kim_jinkyung.docx'
 import Myword from '../assets/microsoft_word.png'
+import emailjs from 'emailjs-com'
 
 const Resume = () => {
+
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_aqh19er', 'template_arzf081', e.target,'user_AlRoxjzYDpL95QMcNEjIa')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+            e.target.reset()
+        };
+
+
     return (
 
     <section className='min-h-screen flex flex-col items-center  justify-center bg-secondary dark:bg-secondary' id='resume'>
-                
+        
         <h1 className="text-5xl font-bold mt-7 mb-7 text-accent">Resume</h1>
 
         <span className = 'w-40 h-40 bg-white shadow-2xl m-2 rounded-full flex items-center p-5'>
@@ -70,7 +89,7 @@ const Resume = () => {
 
                         </div>
 
-                        <form class="p-6 flex flex-col justify-center">
+                        <form class="p-6 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
                             <div class="flex flex-col">
                                 <label for="name" class="hidden">성함</label>
                                 <input type="name" name="name" id="name" placeholder="성함" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 dark:text-gray-200 font-semibold focus:border-indigo-500 focus:outline-none"/>
@@ -86,16 +105,12 @@ const Resume = () => {
                                 <input type="tel" name="tel" id="tel" placeholder="연락처" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 dark:text-gray-200 font-semibold focus:border-indigo-500 focus:outline-none"/>
                             </div>
 
-                            <button type="submit" class="md:w-32 bg-indigo-500 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
-                                전송
-                            </button>
+                            <input type="submit" value='전송' class="md:w-32 bg-indigo-500 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"/>
+                                
                         </form>
                     </div>
                 </div>
-            </div>
-        
-
-
+            </div>      
 
     </section>
     )
