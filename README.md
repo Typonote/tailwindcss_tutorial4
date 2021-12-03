@@ -5,6 +5,7 @@ Tailwindcss를 이용하여 나만의 portfolio 사이트 만들기<br/>
 
 - React.js
 - TailwindCSS
+- Email.js
 
 
 ## 📄 예시
