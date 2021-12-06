@@ -1,50 +1,53 @@
-
-import './App.css';
-import Navigation from './components/Navigation';
-import Header from './components/Header';
-import Stack from './components/stack';
-import Dropdown from './components/Dropdown';
-import { useEffect, useState } from 'react';
-import Projects from './components/Projects';
-import Topbutton from './components/Topbutton';
-import Resume from './components/Resume';
-import { ThemeProvider } from './components/themeContext';
-
+import "./App.css";
+import Navigation from "./components/Navigation";
+import Header from "./components/Header";
+import Stack from "./components/stack";
+import Dropdown from "./components/Dropdown";
+import { useEffect, useState } from "react";
+import Projects from "./components/Projects";
+import Topbutton from "./components/Topbutton";
+import Resume from "./components/Resume";
+import { ThemeProvider } from "./components/themeContext";
+import { Helmet } from "react-helmet";
 
 function App() {
-
-  const [isOpen , setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
-  setIsOpen(!isOpen);
+    setIsOpen(!isOpen);
   };
 
-  useEffect(() =>{
+  useEffect(() => {
     const hideMenu = () => {
-      if(window.innerWidth > 760 && isOpen){
-        setIsOpen(false)
-        console.log("resize")
+      if (window.innerWidth > 760 && isOpen) {
+        setIsOpen(false);
+        console.log("resize");
       }
-    }
+    };
 
-    window.addEventListener('resize', hideMenu)
+    window.addEventListener("resize", hideMenu);
 
     return () => {
-      window.removeEventListener('resize', hideMenu)
-    }
-  })
+      window.removeEventListener("resize", hideMenu);
+    };
+  });
 
   return (
-    <ThemeProvider>
-      <div className="App">
-        <Navigation toggle={toggle} />
-        <Dropdown isOpen={isOpen}  toggle={toggle} />
-        <Header />
-        <Stack />
-        <Projects />
-        <Resume />
-        <Topbutton />
-      </div>
-    </ThemeProvider>
+    <>
+      <Helmet>
+        <title>프론트엔드 개발자 김진경</title>
+      </Helmet>
+      <ThemeProvider>
+        <div className="App">
+          <Navigation toggle={toggle} />
+          <Dropdown isOpen={isOpen} toggle={toggle} />
+          <Header />
+          <Stack />
+          <Projects />
+          <Resume />
+          <Topbutton />
+        </div>
+      </ThemeProvider>
+    </>
   );
 }
 

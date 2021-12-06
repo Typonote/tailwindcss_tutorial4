@@ -15,7 +15,7 @@ const Projects = () => {
 
       <div class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-col-1 px-8 py-24 gap-8">
         <div>
-          <a href="https://github.com/Typonote?tab=repositories&q=Analysis&type=&language=&sort=">
+          <a href="https://github.com/Typonote/PLANTIT">
             <div class="bg-secondary dark:bg-gray-800 p-6 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 shadow-md">
               <img
                 class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6"
@@ -25,7 +25,7 @@ const Projects = () => {
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font font-bold mb-3">
                 팀 프로젝트
               </h3>
-              <h2 class="text-lg text-primary font-medium title-font mb-1 font-bold">
+              <h2 class="text-lg text-primary font-medium title-font mb-1 font-bold ">
                 작물 질병 AI 판독 서비스 개발
               </h2>
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font font-bold mb-4">
