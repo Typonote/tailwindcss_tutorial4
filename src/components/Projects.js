@@ -31,7 +31,7 @@ const Projects = () => {
                 프론트엔드
               </h3>
               <p class="leading-relaxed text-base text-primary">
-                베란다 농부를 위한 종합 가드닝 솔루션 서비스인 PLANTIT의
+                베란다 농부를 위한 종합 가드닝 솔루션 서비스인 PLANTIT을
                 기획하고, 프론트엔드 개발에 참여하였습니다.
               </p>
             </div>
@@ -81,8 +81,8 @@ const Projects = () => {
                 프론트엔드
               </h3>
               <p class="leading-relaxed text-base text-primary">
-                커리어넷에서 제공하는 직업심리검사 API를 이용하여 사용자의 직업
-                적합도를 테스트 할 수 있는 사이트를 제작하였습니다.
+                커리어넷의 직업심리검사 API를 이용하여 사용자의 직업 적합도를
+                테스트 할 수 있는 사이트를 제작하였습니다.
               </p>
             </div>
           </a>
@@ -106,8 +106,8 @@ const Projects = () => {
                 안드로이드 개발
               </h3>
               <p class="leading-relaxed text-base text-primary">
-                농촌 진흥청에서 제공하는 작물별 비료사용 처방 데이터를 이용하여
-                웃거름 및 밑거름을 처방해주는 솔루션 어플을 제작하였습니다.
+                농촌 진흥청의 작물별 비료사용 처방 데이터를 이용하여 거름을
+                계산해주는 어플을 제작하였습니다.
               </p>
             </div>
           </a>
