@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import image1 from "../assets/teamproject1.png";
 import image2 from "../assets/project2.png";
 import image3 from "../assets/project4.png";
@@ -20,7 +19,7 @@ const Projects = () => {
               <img
                 class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6"
                 src={image3}
-                alt="Image Size 720x400"
+                alt=""
               />
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font font-bold mb-3">
                 팀 프로젝트
@@ -45,7 +44,7 @@ const Projects = () => {
               <img
                 class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6"
                 src={image1}
-                alt="Image Size 720x400"
+                alt=""
               />
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font font-bold mb-3">
                 팀 프로젝트
@@ -70,7 +69,7 @@ const Projects = () => {
               <img
                 class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6"
                 src={image2}
-                alt="Image Size 720x400"
+                alt=""
               />
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font font-bold mb-3">
                 개인 프로젝트
@@ -95,7 +94,7 @@ const Projects = () => {
               <img
                 class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72  rounded w-full object-cover object-center mb-6"
                 src={image4}
-                alt="Image Size 720x400"
+                alt=""
               />
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font font-bold mb-3">
                 개인 프로젝트

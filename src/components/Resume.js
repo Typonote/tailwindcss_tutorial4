@@ -1,11 +1,9 @@
 import React, { useRef, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Myresume from "../assets/resume_kim_jinkyung.docx";
 import Myword from "../assets/microsoft_word.png";
 import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Link } from "react-router-dom";
 
 const Resume = () => {
   const [name, setName] = useState("");
