@@ -1,5 +1,6 @@
 # Tailwindcss_turorial4
 Tailwindcss를 이용하여 나만의 portfolio 사이트 만들기<br/>
+https://jinkyung-kim-portfolio.netlify.app/
 
 ## 💻 기술 스택
 
